@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Quality Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">📊 Data Quality Checker</h1>
+        <p class="subtitle">Upload a CSV or Excel file to analyze its data quality and get an AI-generated summary.</p>
+
+        <div class="upload-box">
+            <input type="file" id="fileInput">
+            <button id="analyzeBtn" onclick="">Analyze File</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">Analyzing... Please wait.</div>
+
+        <div class="card" id="report-card">
+            <h2>📌 Data Quality Report</h2>
+            <pre id="qualityReport" class="text-output"></pre>
+        </div>
+
+        <div class="card" id="summary-card">
+            <h2>🧠 Gemini Summary</h2>
+            <pre id="summary" class="text-output"></pre>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
