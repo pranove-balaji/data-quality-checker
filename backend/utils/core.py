@@ -1,4 +1,5 @@
 import pandas as pd
+
 def data_checker(df):
     report=""
     #statistical data
